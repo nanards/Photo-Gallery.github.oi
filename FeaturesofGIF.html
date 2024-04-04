@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS Link  -->
+    <link rel="stylesheet" href="homestyle.css" />
+    <link rel="shortcut icon" href="home-images/flaticon.png" />
+    <link rel="stylesheet" href="Collection.html" />
+    <link rel="stylesheet" href="Collectionstyle.css" />
+    <!-- Font Awesome CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css    "/>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="mix-imagestyle.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" id="check-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <img src="home-images/pg.logo.png" alt="logo" />
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="Galleries.html">Galleries</a></li>
+          <li><a href="FeaturesofGIF.html">Features of GIF</a></li>
+          <li><a href="about us.html">About Us</a></li> 
+        </ul>
+      </nav>
+      <h2>GIF</h2>
+    <div class="full-img" id="fullImgBox">
+        <img src="gif/mix-gif.gif" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img_gallery">
+        
+        <img src="gif/mix-gif.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif10.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif11.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif12.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif13.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif14.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif15.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif16.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif17.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif18.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif19.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif20.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif2.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif3.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif4.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif5.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif6.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif7.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif8.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif9.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif20.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif21.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif22.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif23.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif24.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif25.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif26.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif27.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif28.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif29.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/mix-gif30.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+    </div>
+
+<script>
+    var fullImgBox = document.getElementById("fullImgBox")
+    var fullImg = document.getElementById("fullImg")
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex ";
+        fullImg.src = pic;
+    }
+
+    function closeFullImg(){
+        fullImgBox.style.display = "none"
+    }
+
+    function rotateImage(img) {
+        img.style.transform = "rotate(-5deg)";
+    }
+
+    function resetImage(img) {
+        img.style.transform = "rotate(0deg)";
+    }
+</script>
+</body>
+</html>

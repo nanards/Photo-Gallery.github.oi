@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS Link  -->
+    <link rel="stylesheet" href="homestyle.css" />
+    <link rel="shortcut icon" href="home-images/flaticon.png" />
+    <link rel="stylesheet" href="Collection.html" />
+    <link rel="stylesheet" href="Collectionstyle.css" />
+    <!-- Font Awesome CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css    "/>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="imagesstyle.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" id="check-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <img src="home-images/pg.logo.png" alt="logo" />
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="Galleries.html">Galleries</a></li>
+          <li><a href="FeaturesofGIF.html">Features of GIF</a></li>
+          <li><a href="about us.html">About Us</a></li> 
+        </ul>
+      </nav>
+    <div class="full-img" id="fullImgBox">
+        <img src="gif/animegif.gif" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img_gallery">
+        
+        <img src="gif/animegif.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/animegif10.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/animegif11.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/animegif12.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/animegif13.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/animegif14.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/animegif15.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/animegif2.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/animegif3.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/animegif4.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/animegif6.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/animegif5.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/animegif7.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/animegif8.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="gif/animegif9.gif" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+    </div>
+
+<script>
+    var fullImgBox = document.getElementById("fullImgBox")
+    var fullImg = document.getElementById("fullImg")
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex ";
+        fullImg.src = pic;
+    }
+
+    function closeFullImg(){
+        fullImgBox.style.display = "none"
+    }
+
+    function rotateImage(img) {
+        img.style.transform = "rotate(-5deg)";
+    }
+
+    function resetImage(img) {
+        img.style.transform = "rotate(0deg)";
+    }
+</script>
+</body>
+</html>

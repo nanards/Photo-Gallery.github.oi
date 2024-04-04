@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Link  -->
+    <link rel="stylesheet" href="homestyle.css" />
+    <link rel="shortcut icon" href="home-images/flaticon.png" />
+    <link rel="stylesheet" href="Collection.html" />
+    <link rel="stylesheet" href="Collectionstyle.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- Font Awesome CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css    "/>
+    <title>Galleries - Image Gallery</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" id="check-btn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <img src="home-images/pg.logo.png" alt="logo" />
+            <ul>
+              <li><a href="homepage.html">Home</a></li>
+              <li><a href="Galleries.html">Galleries</a></li>
+              <li><a href="FeaturesofGIF.html">Features of GIF</a></li>
+              <li><a href="about us.html">About Us</a></li> 
+            </ul>
+          </nav>
+
+          <h2>Popular Collection</h2>
+        <section class="galleries">
+            <a href="Nature.html">
+                <article class="gallery">
+                    <div class="gallery__images">
+                        <div class="gallery__images-thumbnail">
+                            <img src="./assets/nature1.jpg" alt="Nature One">
+                        </div>
+                        <div class="gallery__images-more">
+                            <div><img src="./assets/nature2.jpg" alt="Nature Two"></div>
+                            <div><img src="./assets/nature3.jpg" alt="Nature Three"></div>
+                            <div><img src="./assets/nature4.jpg" alt="Nature Four"></div>
+                        </div>
+                    </div>
+                    <div class="gallery__info"></div>
+                    <p>Nature</p>
+                    <small><i class="uil uil-scenery"> 10</i></small>
+                </article>
+            </a>
+            <a href="History.html">
+                <article class="gallery">
+                    <div class="gallery__images">
+                        <div class="gallery__images-thumbnail">
+                            <img src="./assets/history1.jpg" alt="History One">
+                        </div>
+                        <div class="gallery__images-more">
+                            <div><img src="./assets/history2.jpg" alt="History Two"></div>
+                            <div><img src="./assets/history3.jpg" alt="History Three"></div>
+                            <div><img src="./assets/history4.jpg" alt="History Four"></div>
+                        </div>
+                    </div>
+                    <div class="gallery__info"></div>
+                    <p>History</p>
+                    <small><i class="uil uil-scenery"> 8</i></small>
+                </article>
+            </a>
+            <a href="Person.html">
+                <article class="gallery">
+                    <div class="gallery__images">
+                        <div class="gallery__images-thumbnail">
+                            <img src="./assets/person1.jpg" alt="Person One">
+                        </div>
+                        <div class="gallery__images-more">
+                            <div><img src="./assets/person2.jpg" alt="Person Two"></div>
+                            <div><img src="./assets/person3.jpg" alt="Person Three"></div>
+                            <div><img src="./assets/person4.jpg" alt="Person Four"></div>
+                        </div>
+                    </div>
+                    <div class="gallery__info"></div>
+                    <p>Person</p>
+                    <small><i class="uil uil-scenery"> 8</i></small>
+                </article>
+            </a>
+            <a href="onepiece.html">
+                <article class="gallery">
+                    <div class="gallery__images">
+                        <div class="gallery__images-thumbnail">
+                            <img src="./assets/onepiece.jpg" alt="One Piece">
+                        </div>
+                        <div class="gallery__images-more">
+                            <div><img src="./assets/onepiece2.jpg" alt="One Piece"></div>
+                            <div><img src="./assets/onepiece3.jpg" alt="One Piece"></div>
+                            <div><img src="./assets/onepiece4.jpg" alt="One Piece"></div>
+                        </div>
+                    </div>
+                    <div class="gallery__info"></div>
+                    <p>One Piece</p>
+                    <small><i class="uil uil-scenery"> 11</i></small>
+                </article>
+            </a>
+            <a href="dragon-ball.html">
+                <article class="gallery">
+                    <div class="gallery__images">
+                        <div class="gallery__images-thumbnail">
+                            <img src="./assets/dragon-ball.jpg" alt="Dragon Ball">
+                        </div>
+                        <div class="gallery__images-more">
+                            <div><img src="./assets/dragon-ball10.jpg" alt="Dragon Ball"></div>
+                            <div><img src="./assets/dragon-ball11.jpg" alt="Dragon Ball"></div>
+                            <div><img src="./assets/dragon-ball12.jpg" alt="Dragon Ball"></div>
+                        </div>
+                    </div>
+                    <div class="gallery__info"></div>
+                    <p>Dragon Ball</p>
+                    <small><i class="uil uil-scenery"> 11</i></small>
+                </article>
+            </a>
+            <a href="Images.html">
+                <article class="gallery">
+                    <div class="gallery__images">
+                        
+                        <div class="gallery__images-thumbnail">
+                            <img src="./assets/img1.jpg" alt="Nature One">
+                        </div>
+                        <div class="gallery__images-more">
+                            <div><img src="./assets/img2.jpg" alt="Nature Two" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)"></div>
+                            <div><img src="./assets/img3.jpg" alt="Nature Three"></div>
+                            <div><img src="./assets/img4.jpg" alt="Nature Four"></div>
+                        </div>
+                    </div>
+                    <div class="gallery__info"></div>
+                    <p>Images</p>
+                    <small><i class="uil uil-scenery"> 8</i></small>
+                </article>
+            </a>
+            <a href="Cars.html">
+                <article class="gallery">
+                    <div class="gallery__images">
+                        <div class="gallery__images-thumbnail">
+                            <img src="./assets/blue-car-subaru-impreza-wrx.jpg" alt="Car One">
+                        </div>
+                        <div class="gallery__images-more">
+                            <div><img src="./assets/dodge-challenger.jpg" alt="Car Two"></div>
+                            <div><img src="./assets/mitsubishi-lancer-evolution.jpg" alt="Car Three"></div>
+                            <div><img src="./assets/Subaru-WRX.jpg" alt="Car Four"></div>
+                        </div>
+                    </div>
+                    <div class="gallery__info"></div>
+                    <p>Cars</p>
+                    <small><i class="uil uil-scenery"> 9</i></small>
+                </article>
+            </a>
+            <a href="Animes.html">
+                <article class="gallery">
+                    <div class="gallery__images">
+                        <div class="gallery__images-thumbnail">
+                            <img src="./assets/anime.jpg" alt="Anime">
+                        </div>
+                        <div class="gallery__images-more">
+                            <div><img src="./assets/anime10.jpg" alt0="Anime"></div>
+                            <div><img src="./assets/anime11.jpg" alt="Anime"></div>
+                            <div><img src="./assets/anime12.jpg" alt="Anime"></div>
+                        </div>
+                    </div>
+                    <div class="gallery__info"></div>
+                    <p>Animes</p>
+                    <small><i class="uil uil-scenery"> 12</i></small>
+                </article>
+            </a>
+            <a href="pixelgif.html">
+                <article class="gallery">
+                    <div class="gallery__images">
+                        <div class="gallery__images-thumbnail">
+                            <img src="./gif/pixelgif.gif" alt="Anime">
+                        </div>
+                        <div class="gallery__images-more">
+                            <div><img src="./gif/pixelgif.gif" alt0="Anime"></div>
+                            <div><img src="./gif/pixelgif10.gif" alt="Anime"></div>
+                            <div><img src="./gif/pixelgif12.gif" alt="Anime"></div>
+                        </div>
+                    </div>
+                    <div class="gallery__info"></div>
+                    <p>Pixel GIF</p>
+                    <small><i class="uil uil-scenery"> 13</i></small>
+                </article>
+            </a>
+            <a href="wallpapergif.html">
+                <article class="gallery">
+                    <div class="gallery__images">
+                        <div class="gallery__images-thumbnail">
+                            <img src="./gif/wallpapergif.gif" alt="Anime">
+                        </div>
+                        <div class="gallery__images-more">
+                            <div><img src="./gif/wallpapergif.gif" alt0="Anime"></div>
+                            <div><img src="./gif/wallpapergif10.gif" alt="Anime"></div>
+                            <div><img src="./gif/wallpapergif2.gif" alt="Anime"></div>
+                        </div>
+                    </div>
+                    <div class="gallery__info"></div>
+                    <p>Wallpaper GIF</p>
+                    <small><i class="uil uil-scenery"> 10</i></small>
+                </article>
+            </a>
+            <a href="animegif.html">
+                <article class="gallery">
+                    <div class="gallery__images">
+                        <div class="gallery__images-thumbnail">
+                            <img src="./gif/animegif.gif" alt="Anime">
+                        </div>
+                        <div class="gallery__images-more">
+                            <div><img src="./gif/animegif10.gif" alt0="Anime"></div>
+                            <div><img src="./gif/animegif11.gif" alt="Anime"></div>
+                            <div><img src="./gif/animegif12.gif" alt="Anime"></div>
+                        </div>
+                    </div>
+                    <div class="gallery__info"></div>
+                    <p>Anime GIF</p>
+                    <small><i class="uil uil-scenery"> 12</i></small>
+                </article>
+            </a>
+            <a href="carsgif.html">
+                <article class="gallery">
+                    <div class="gallery__images">
+                        <div class="gallery__images-thumbnail">
+                            <img src="./gif/cargif.gif" alt="Anime">
+                        </div>
+                        <div class="gallery__images-more">
+                            <div><img src="./gif/cargif5.gif" alt0="Anime"></div>
+                            <div><img src="./gif/cargif2.gif" alt="Anime"></div>
+                            <div><img src="./gif/cargif3.gif" alt="Anime"></div>
+                        </div>
+                    </div>
+                    <div class="gallery__info"></div>
+                    <p>Anime GIF</p>
+                    <small><i class="uil uil-scenery"> 5</i></small>
+                </article>
+            </a>
+        </section>
+    </main>
+    
+</body>
+</html>
+
+

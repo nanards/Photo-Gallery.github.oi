@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS Link  -->
+    <link rel="stylesheet" href="homestyle.css" />
+    <link rel="shortcut icon" href="home-images/flaticon.png" />
+    <link rel="stylesheet" href="Collection.html" />
+    <link rel="stylesheet" href="Collectionstyle.css" />
+    <!-- Font Awesome CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css    "/>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="imagesstyle.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" id="check-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <img src="home-images/pg.logo.png" alt="logo" />
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="Galleries.html">Galleries</a></li>
+          <li><a href="FeaturesofGIF.html">Features of GIF</a></li>
+          <li><a href="about us.html">About Us</a></li> 
+        </ul>
+      </nav>
+    <div class="full-img" id="fullImgBox">
+        <img src="assets/img1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img_gallery">
+        
+        <img src="assets/img1.jpg" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="assets/img2.jpg" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="assets/img3.jpg" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="assets/img4.jpg" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="assets/img5.jpg" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="assets/img6.jpg" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="assets/img7.jpg" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+        <img src="assets/img8.jpg" onclick="openFullImg(this.src)" onmouseover="rotateImage(this)" onmouseout="resetImage(this)">
+    </div>
+
+<script>
+    var fullImgBox = document.getElementById("fullImgBox")
+    var fullImg = document.getElementById("fullImg")
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex ";
+        fullImg.src = pic;
+    }
+
+    function closeFullImg(){
+        fullImgBox.style.display = "none"
+    }
+
+    function rotateImage(img) {
+        img.style.transform = "rotate(-5deg)";
+    }
+
+    function resetImage(img) {
+        img.style.transform = "rotate(0deg)";
+    }
+</script>
+</body>
+</html>

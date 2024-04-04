@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,500;1,600&family=Montserrat:wght@600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: #ecf4fb;
+    background: var(--color-body-bg);
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    color: var(--color-dark);
+}
+::selection {
+    background-color: #c50529;
+}
+
+nav {
+    display: flex;
+    padding: 2.5% 10%;
+    filter: contrast(20px);
+    background: linear-gradient(110deg, grey, white);
+}
+
+nav img {
+    width: 180px;
+    height: 36px;
+    cursor: pointer;
+}
+
+nav ul {
+    text-align: right;
+    flex: 1;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 6px 15px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #c50529;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    display: block;
+    transition: 0.6s;
+    background-color: #c50529;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: #ecf4fb;
+}
+
+.img_gallery {
+    width: 100%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 60px;
+}
+
+.img_gallery img {
+    width: auto; 
+    height: 200px; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: 3px solid transparent;
+    box-sizing: border-box;
+    max-width: 100%; 
+    padding: 0;
+    margin: auto;
+}
+
+.img_gallery img:hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-color: #fcfcfc; 
+}
+
+.full-img {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.full-img img {
+    max-width: 40%;
+    max-height: 500%;
+}
+
+.full-img span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
